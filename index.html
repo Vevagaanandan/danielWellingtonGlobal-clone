@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daniel Wellington Veva</title>
+
+    <!-- CSS File Link -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- FontAwesome CDN Link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Swiper CDN -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+</head>
+<body>
+    <header>
+        <div class="header-sub-tab">
+
+            <div class="topBanner" id="topBanner">
+                <div class="topBanner-subOne"></div>
+                <div class="topBanner-subTwo">
+                    <p>BUY ANY ICONIC WATCH <b>AND ADD A CLASSIC BRACELET FOR FREE</b></p>
+                </div>
+                <div class="topBanner-subThree">
+                    <a href="#"><i class="fa-solid fa-xmark" onclick="hideBanner()"></i></a>
+                </div>
+                
+            </div>
+            <div class="brandHeader" id="brandHeader">
+                <div class="brandHeader-subOne">
+                    <a class="sideMenuBar" href="#"><i onclick="sideMenuAppear()" class="fa-solid fa-bars"></i></a>
+                    <a href="#"><i class="fa-solid fa-comment"></i></a>
+                </div>
+                <div class="brandHeader-subTwo">
+                    <a class="textDecoNone" href="#"><h4>DANIEL WELLINGTON</h4></a>
+                </div>
+                <div class="brandHeader-subThree">
+                    <a href="#"><i class="fa-solid fa-heart"></i></a>
+                    <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                </div>
+            </div>
+            <div class="header-icons" id="header-iconsId">
+                <a href="#"><i onclick="sideMenuAppearResponsive()" class="fa-solid fa-bars"></i></a>
+                <a href="#"><i class="fa-solid fa-comment"></i></a>
+                <a href="#"><i class="fa-solid fa-heart"></i></a>
+                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+            </div>
+            <nav id="theNav">
+                <div>
+                    <ul class="main-menu">
+                        <li><a href="#" class="a_parent textDecoNone">WATCHES</a>
+                            <ul class="sub-mainMenu">
+                                <li><a href="#">Watches</a></li>
+                                <li><a href="#">Women's Watches</a></li>
+                                <li><a href="#">Men's Watches</a></li>
+                                <li><a href="#">Rose Gold Watches</a></li>
+                                <li><a href="#">Silver Watches</a></li>
+                                <li><a href="#">Gold Watches</a></li>
+                                <li><a href="#">Color Dials</a></li>
+                                <li><a href="#">Mother Of Pearl Watches</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#" class="a_parent textDecoNone">WATCH STRAPS</a>
+                            <ul class="sub-mainMenu">
+                                <li><a href="#">Watch Straps</a></li>
+                                <li><a href="#">Mesh watch straps</a></li>
+                                <li><a href="#">Leather watch straps</a></li>
+                                <li><a href="#">NATO watch straps</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#" class="a_parent textDecoNone">SMARTWATCH CASE</a></li>
+                        <li><a href="#" class="a_parent textDecoNone">JEWELRY</a>
+                            <ul class="sub-mainMenu">
+                                <li><a href="#">Jewelry</a></li>
+                                <li><a href="#">Rings</a></li>
+                                <li><a href="#">Bracelets</a></li>
+                                <li><a href="#">Earrings</a></li>
+                                <li><a href="#">Necklaces</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#" class="a_parent textDecoNone">SUNGLASSES</a></li>
+                        <li><a href="#" class="a_parent textDecoNone">GIFT SETS</a>
+                            <ul class="sub-mainMenu">
+                                <li><a href="#">Gift sets</a></li>
+                                <li><a href="#">Gifts for Women</a></li>
+                                <li><a href="#">Gifts for Men</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#" class="a_parent textDecoNone">COLLECTIONS</a>
+                            <ul class="sub-mainMenu">
+                                <li><a href="#">All Collections</a></li>
+                                <li><a href="#">Quadro Collection</a></li>
+                                <li><a href="#">Petite Collection</a></li>
+                                <li><a href="#">Classic Collection</a></li>
+                                <li><a href="#">Smartwatch Cases</a></li>
+                                <li><a href="#">Iconic Collection</a></li>
+                                <li><a href="#">Iconic Link Automatic</a></li>
+                                <li><a href="#">Elan Collection</a></li>
+                                <li><a href="#">Aspiration Collection</a></li>
+                                <li><a href="#">Elevation Collection</a></li>
+                                <li><a href="#">Emalie Collection</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="contentOnImage">
+                <h1>BUY ANY ICONIC WATCH</h1>
+                <h1>GET A FREE CLASSIC BRACELET</h1>
+                <a href="#" class="btn-black textDecoNone">EXPLORE</a>
+            </div>
+        </div>
+    </header>
+    <div onclick="closeSidebarOne()" class="sideMenu-overlay" id="sideMenu-overlayId"></div>
+    <div class="sideMenu" id="sideMenuId">
+        <div class="sideMenu-top">
+            <div class="subMenuList">
+                <ul>
+                    <li>
+                        <a onclick="sideMenuWatchesList()" class="sideMenuLink-watches" href="#">WATCHES <i class="fa-solid fa-angle-right"></i></a>
+                        <ul id="sideMenuLinkWatches" class="sideBarTop-sub sideMenuLinkWatches">
+                            <div class="sideBarSub-title">
+                                <i onclick="closeSideMenuItemList()" class="fa-solid fa-arrow-left-long"></i>
+                                <h4>WATCHES</h4>
+                            </div>
+                            <li><a href="#">Watches</a></li>
+                            <li><a href="#">Women's Watches</a></li>
+                            <li><a href="#">Men's Watches</a></li>
+                            <li><a href="#">Rose Gold Watches</a></li>
+                            <li><a href="#">Silver Watches</a></li>
+                            <li><a href="#">Gold Watches</a></li>
+                            <li><a href="#">Color Dials</a></li>
+                            <li><a href="#">Mother Of Pearl Watches</a></li>
+                            <div class="sideMenuItemList-below">
+                                <ul>
+                                    <li>FREE SHIPPING</li>
+                                    <li>FREE RETURNS</li>
+                                    <li>TWO YEAR WARRANTY</li>
+                                </ul>
+                            </div>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a onclick="sideMenuWatchStrapList()" class="sideMenuLink-watchStraps" href="#">WATCH STRAPS <i class="fa-solid fa-angle-right"></i></a>
+                        <ul id="sideMenuLinkWatchStraps" class="sideBarTop-sub sideMenuLinkWatchStraps">
+                            <div class="sideBarSub-title">
+                                <i onclick="closeSideMenuItemList()" class="fa-solid fa-arrow-left-long"></i>
+                                <h4>WATCH STRAPS</h4>
+                            </div>
+                            <li><a href="#">Watch Straps</a></li>
+                            <li><a href="#">Mesh watch straps</a></li>
+                            <li><a href="#">Leather watch straps</a></li>
+                            <li><a href="#">NATO watch straps</a></li>
+                            <div class="sideMenuItemList-below">
+                                <ul>
+                                    <li>FREE SHIPPING</li>
+                                    <li>FREE RETURNS</li>
+                                    <li>TWO YEAR WARRANTY</li>
+                                </ul>
+                            </div>
+                        </ul>
+                    </li>
+                    <li> <a href="#">SMARTWATCH CASE <i class="fa-solid fa-angle-right"></i></a></li>        
+                    <li>
+                        <a  onclick="sideMenuLinkJewelryList()" class="sideMenuLink-jewelry" href="#">JEWELRY <i class="fa-solid fa-angle-right"></i></a>
+                        <ul id="sideMenuLinkJewelry" class="sideBarTop-sub sideMenuLinkJewelry">
+                            <div class="sideBarSub-title">
+                                <i onclick="closeSideMenuItemList()" class="fa-solid fa-arrow-left-long"></i>
+                                <h4>JEWELRY</h4>
+                            </div>
+                            <li><a href="#">Jewelry</a></li>
+                            <li><a href="#">Rings</a></li>
+                            <li><a href="#">Bracelets</a></li>
+                            <li><a href="#">Earrings</a></li>
+                            <li><a href="#">Necklaces</a></li>
+
+                            <div class="sideMenuItemList-below">
+                                <ul>
+                                    <li>FREE SHIPPING</li>
+                                    <li>FREE RETURNS</li>
+                                    <li>TWO YEAR WARRANTY</li>
+                                </ul>
+                            </div>
+                        </ul>
+                    </li>
+                    <li> <a href="#">SUNGLASSES <i class="fa-solid fa-angle-right"></i></a> </li>
+                    <li>
+                        <a onclick="sideMenuLinkGiftSetsList()" class="sideMenuLink-giftSets" href="#">GIFT SETS <i class="fa-solid fa-angle-right"></i></a>
+                        <ul id="sideMenuLinkGiftSets" class="sideBarTop-sub sideMenuLinkGiftSets">
+                            <div class="sideBarSub-title">
+                                <i onclick="closeSideMenuItemList()" class="fa-solid fa-arrow-left-long"></i>
+                                <h4>GIFT SETS</h4>
+                            </div>
+                            <li><a href="#">Gift sets</a></li>
+                            <li><a href="#">Gifts for Women</a></li>
+                            <li><a href="#">Gifts for Men</a></li>
+                            <div class="sideMenuItemList-below">
+                                <ul>
+                                    <li>FREE SHIPPING</li>
+                                    <li>FREE RETURNS</li>
+                                    <li>TWO YEAR WARRANTY</li>
+                                </ul>
+                            </div>
+                        </ul>
+                    </li>
+                    <li>
+                        <a onclick="sideMenuLinkCollectionsList()" class="sideMenuLink-collections" href="#">COLLECTIONS <i class="fa-solid fa-angle-right"></i></a>
+                        <ul id="sideMenuLinkCollections" class="sideBarTop-sub sideMenuLinkCollections">
+                            <div class="sideBarSub-title">
+                                <i onclick="closeSideMenuItemList()" class="fa-solid fa-arrow-left-long"></i>
+                                <h4>COLLECTIONS</h4>
+                            </div>
+                            <li><a href="#">All Collections</a></li>
+                            <li><a href="#">Quadro Collection</a></li>
+                            <li><a href="#">Petite Collection</a></li>
+                            <li><a href="#">Classic Collection</a></li>
+                            <li><a href="#">Smartwatch Cases</a></li>
+                            <li><a href="#">Iconic Collection</a></li>
+                            <li><a href="#">Iconic Link Automatic</a></li>
+                            <li><a href="#">Elan Collcetion</a></li>
+                            <li><a href="#">Aspiration Collection</a></li>
+                            <li><a href="#">Elevation Collection</a></li>
+                            <li><a href="#">Emalie Collection</a></li>
+                            <div class="sideMenuItemList-below">
+                                <ul>
+                                    <li>FREE SHIPPING</li>
+                                    <li>FREE RETURNS</li>
+                                    <li>TWO YEAR WARRANTY</li>
+                                </ul>
+                            </div>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="shopInstagram">
+                <a href="#">SHOP INSTAGRAM</a>
+            </div>
+            <div class="otherTexts">
+                <a href="#">Contact Us</a>
+                <a href="#">Returns</a>
+            </div>
+        </div>
+        <div id="sideMenu-below" class="sideMenu-below">
+            <ul>
+                <li>FREE SHIPPING</li>
+                <li>FREE RETURNS</li>
+                <li>TWO YEAR WARRANTY</li>
+            </ul>
+        </div>
+        <i id="sideBarMenuXmarkId" class="fa-solid fa-xmark sideBarMenuXmark" onclick="closeSidebarTwo()"></i>
+    </div>
+
+    <!-- HeaderSubtabTwo Desktop View -->
+    <div class="header-sub-tab-two-desktopView">
+        <div class="HeaderSubtabTwo-threeSubs">
+                <i class="fa-solid fa-dolly"></i>
+                <p>FREE SHIPPING</p>
+        </div>
+        <div class="HeaderSubtabTwo-threeSubs">
+                <i class="fa-solid fa-dolly"></i>
+                <p>FREE RETURNS</p>
+        </div>
+        <div class="HeaderSubtabTwo-threeSubs">
+                <i class="fa-solid fa-dolly"></i>
+                <p>TWO YEAR WARRANTY</p>
+        </div>
+    </div>
+
+    <!-- HeaderSubtabTwo MobileAndTablet View -->
+    <div class="header-sub-tab-two">
+        <div class="swiper mySwiperShipping">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div>
+                    <i class="fa-solid fa-dolly"></i>
+                    <p>FREE SHIPPING</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div>
+                    <i class="fa-solid fa-dolly"></i>
+                    <p>FREE RETURNS</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div>
+                    <i class="fa-solid fa-dolly"></i>
+                    <p>TWO YEAR WARRANTY</p>
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
+    
+    <!-- Section One START -->
+    <section class="section-one">
+        <ul>
+            <li><a class="textDecoNone" href="#">WATCHES</a></li>
+            <li><a class="textDecoNone" href="#">SMARTWATCH CASES</a></li>
+            <li><a class="textDecoNone" href="#">SUNGLASSES</a></li>
+            <li><a class="textDecoNone" href="#">JEWELRY</a></li>
+        </ul>
+    </section>
+    <!-- Section One END -->
+
+    <!-- Section Two START -->
+    <section class="section-two">
+        <div class="row">
+            <div class="sectionTwo-col">
+                <a href="#">
+                    <div class="sectiontwo-image">
+                        <img src="img/sectionTwo-img2.jpg" class="sectionTwo-img" alt="watch">
+                    </div>
+                    <div class="sectionTwo-textBox">
+                        <p class="sectionTwo-blueBox">FREE WITH ANY ICONIC WATCH</p>
+                        <p class="sectionTwo-productName">CLASSIC BRACELET</p>
+                        <div class="sectionTwo-circle">
+                            <label class="iconic">
+                                <input type="radio" value="gray" name="colorThree" checked>
+                                <span></span>
+                            </label>
+                        </div>
+                        <p class="sectionTwo-colorOption">Silver</p>
+                        <p class="sectionTwo-price">US$69</p>
+                    </div>
+                </a>
+            </div>
+            <div class="sectionTwo-col">
+                <a href="#">
+                    <div class="sectiontwo-image">
+                        <img src="img/sectionTwo-img3.jpg" class="sectionTwo-img" alt="watch">
+                    </div>
+                    <div class="sectionTwo-textBox">
+                        <p class="sectionTwo-new">NEW</p>
+                        <p class="sectionTwo-productName">ICONIC LINK MINT</p>
+                        <div class="sectionTwo-circle">
+                            <label class="iconic">
+                                <input type="radio" value="gray" name="colorFour" checked>
+                                <span></span>
+                            </label>
+                        </div>
+                        <p class="sectionTwo-colorOption">Silver</p>
+                        <p class="sectionTwo-price">US$279</p>
+                    </div>
+                </a>
+            </div>
+            <div class="sectionTwo-col">
+                <a href="#">
+                    <div class="sectiontwo-image">
+                        <img src="img/sectionTwo-img4.jpg" class="sectionTwo-img" alt="watch">
+                    </div>
+                    <div class="sectionTwo-textBox">
+                        <p class="sectionTwo-new">NEW</p>
+                        <p class="sectionTwo-productName">ICONIC LINK BLUSH</p>
+                        <div class="sectionTwo-circle">
+                            <label class="iconic">
+                                <input type="radio" value="gray" name="colorFive" checked>
+                                <span></span>
+                            </label>
+                        </div>
+                        <p class="sectionTwo-colorOption">Silver</p>
+                        <p class="sectionTwo-price">US$279</p>
+                    </div>
+                </a>
+            </div>
+            <div class="sectionTwo-col">
+                <a href="#">
+                    <div class="sectiontwo-image">
+                        <img src="img/sectionTwo-img5.jpg" class="sectionTwo-img" alt="watch">
+                    </div>
+                    <div class="sectionTwo-textBox">
+                        <p class="sectionTwo-new">NEW</p>
+                        <p class="sectionTwo-productName">ICONIC LINK CAPRI</p>
+                        <div class="sectionTwo-circle">
+                            <label class="iconic">
+                                <input type="radio" value="gray" name="colorSix" checked>
+                                <span></span>
+                            </label>
+                        </div>
+                        <p class="sectionTwo-colorOption">Silver</p>
+                        <p class="sectionTwo-price">US$279</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+        <!-- Section Two Responsive-Mobile Only START -->
+        <div class="sectionTwo-responsive">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="sectionTwo-col">
+                        <a href="#">
+                            <div class="sectiontwo-image">
+                                <img src="img/sectionTwo-img2.jpg" class="sectionTwo-img" alt="watch">
+                            </div>
+                            <div class="sectionTwo-textBox">
+                                <p class="sectionTwo-blueBox">FREE WITH ANY ICONIC WATCH</p>
+                                <p class="sectionTwo-productName">CLASSIC BRACELET</p>
+                                <div class="sectionTwo-circle">
+                                    <label class="iconic">
+                                        <input type="radio" value="gray01" name="mobileColor-one" checked>
+                                        <span></span>
+                                    </label>
+                                </div>
+                                <p class="sectionTwo-colorOption">Silver</p>
+                                <p class="sectionTwo-price">US$69</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="sectionTwo-col">
+                        <a href="#">
+                            <div class="sectiontwo-image">
+                                <img src="img/sectionTwo-img3.jpg" class="sectionTwo-img" alt="watch">
+                            </div>
+                            <div class="sectionTwo-textBox">
+                                <p class="sectionTwo-new">NEW</p>
+                                <p class="sectionTwo-productName">ICONIC LINK MINT</p>
+                                <div class="sectionTwo-circle">
+                                    <label class="iconic">
+                                        <input type="radio" value="gray02" name="mobileColor-two" checked>
+                                        <span></span>
+                                    </label>
+                                </div>
+                                <p class="sectionTwo-colorOption">Silver</p>
+                                <p class="sectionTwo-price">US$279</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="sectionTwo-col">
+                        <a href="#">
+                            <div class="sectiontwo-image">
+                                <img src="img/sectionTwo-img4.jpg" class="sectionTwo-img" alt="watch">
+                            </div>
+                            <div class="sectionTwo-textBox">
+                                <p class="sectionTwo-new">NEW</p>
+                                <p class="sectionTwo-productName">ICONIC LINK BLUSH</p>
+                                <div class="sectionTwo-circle">
+                                    <label class="iconic">
+                                        <input type="radio" value="gray03" name="mobileColor-three" checked>
+                                        <span></span>
+                                    </label>
+                                </div>
+                                <p class="sectionTwo-colorOption">Silver</p>
+                                <p class="sectionTwo-price">US$279</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="sectionTwo-col">
+                        <a href="#">
+                            <div class="sectiontwo-image">
+                                <img src="img/sectionTwo-img5.jpg" class="sectionTwo-img" alt="watch">
+                            </div>
+                            <div class="sectionTwo-textBox">
+                                <p class="sectionTwo-new">NEW</p>
+                                <p class="sectionTwo-productName">ICONIC LINK CAPRI</p>
+                                <div class="sectionTwo-circle">
+                                    <label class="iconic">
+                                        <input type="radio" value="gray04" name="mobileColor-four" checked>
+                                        <span></span>
+                                    </label>
+                                </div>
+                                <p class="sectionTwo-colorOption">Silver</p>
+                                <p class="sectionTwo-price">US$279</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                
+                </div>
+            </div>
+        </div>
+        <!-- Section Two Responsive-Mobile Only END -->
+    <!-- Section Two end -->
+
+    <!-- Section Three START -->
+    <section class="section-three">
+
+        <!-- Section 3 Sub One -->
+        <div class="sectionThree-subOne">
+            <div class="secThree-subOne-subOne">
+                <img src="img/sec3Sub1-img1.jpg" alt="">
+                <div class="secThree-subOne-subOneText">
+                    <h3>FROM BEING IN THE MOMENT ...</h3>
+                </div>
+            </div>
+            <div class="secThree-subOne-subTwo">
+                <img src="img/sec3sub1-img2.jpg" alt="">
+                <div class="secThree-subOne-subTwoText">
+                    <h3>... TO BEING THE MOMENT</h3>
+                    <a class="btn-black" href="#">EXPLORE</a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Section 3 Sub Two -->
+        <div class="sectionThree-subTwo">
+            <div class="secThree-subTwoCol">
+                <a href="#">
+                    <div class="secThreeSubTwoCol-image">
+                        <img src="img/sectionThree-img01.jpg" alt="watch">
+                    </div>
+                    <div class="secThreeSubTwoCol-textBox">
+                        <p class="secThreeSubTwoCol-productName">CLASSIC BRACELET</p>
+                        <div class="secThreeSubTwoCol-circle">
+                            <label class="lynx">
+                                <input type="radio" value="chocolate" name="color" checked>
+                                <span></span>
+                            </label>
+                            <label class="lynx">
+                                <input type="radio" value="black" name="color">
+                                <span></span>
+                            </label>
+                        </div>
+                        <p class="secThreeSubTwoCol-colorOption">Silver</p>
+                        <p class="secThreeSubTwoCol-price">US$69</p>
+                    </div>
+                </a>
+            </div>
+            <div class="secThree-subTwoCol">
+                <div class="secThree-subTwoCol-imgDiv">
+                    <img src="img/sectionThree-img02.jpg" alt="watch">
+                    <div class="secThree-subTwoCol-subTwoText">
+                        <a class="btn-black" href="#">EXPLORE</a>
+                    </div>
+                </div>
+            </div>
+            <div class="secThree-subTwoCol">
+                <div class="secThree-subTwoCol-imgDiv">
+                    <img src="img/sectionThree-img03.jpg" alt="watch">
+                    <div class="secThree-subTwoCol-subTwoText">
+                        <a class="btn-black" href="#">SHOP NOW</a>
+                    </div>
+                </div>
+            </div>
+            <div class="secThree-subTwoCol">
+                <a href="#">
+                    <div class="secThreeSubTwoCol-image">
+                        <img src="img/sectionThree-img04.jpg" alt="watch">
+                    </div>
+                    <div class="secThreeSubTwoCol-textBox">
+                        <p class="secThreeSubTwoCol-productName">QUADRO STUDIO</p>
+                        <div class="secThreeSubTwoCol-circle">
+                            <label class="quadroStudio">
+                                <input type="radio" value="gold" name="colorTwo" checked>
+                                <span></span>
+                            </label>
+                        </div>
+                        <p class="secThreeSubTwoCol-colorOption">Silver</p>
+                        <p class="secThreeSubTwoCol-price">US$69</p>
+                    </div>
+                </a>
+            </div>
+
+        </div>
+        
+        <!-- Section 3 Sub Three -->
+        <div class="sectionThree-subThree">
+            <div class="secThree-subThree-subOne">
+                <img src="img/sectionThree-img1.jpg" alt="">
+                <div class="secThree-subThree-subOneText">
+                    <h1>LOOKS FOR HER</h1>
+                    <a class="btn-black" href="#">EXPLORE</a>
+                </div>
+            </div>
+                <div class="secThree-subThree-subTwo">
+                    <img src="img/sectionThree-img2.jpg" alt="">
+                    <div class="secThree-subThree-subOneText">
+                        <h1>LOOKS FOR HIM</h1>
+                        <a class="btn-black" href="#">EXPLORE</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Section Three END -->
+
+    <!-- Section Four START -->
+    <section class="section-four">
+        <div class="newsletter">
+            <div class="newsletter-content">
+                <h2>JOIN THE DW MOVEMENT AND ENJOY 10% OFF YOUR FIRST ORDER</h2>
+                <p class="font14 newsletter-content-pOne">Be the first to hear about exclusive offers, special editions, and new launches from the Daniel Wellington community. Sign up today, and you'll receive 10% off your first order.</p>
+                <h5>EMAIL ADDRESS</h5>
+                <form action="">
+                    <input type="email">
+                    <input value="Sign Up" type="submit">
+                </form>
+                <p class="gray font14 newsletter-content-pTwo">
+                    By signing up, i confirm that i'm 16 years or older, that i want to
+                    <br>
+                    receive personalised marketing by email and that i have read and
+                    <br>
+                    understood Daniel Wellington's <a class="gray underlineThickTwo" href="#">Privacy Policy</a>
+                </p>
+            </div>
+        </div>
+
+        <div class="socialMedias">
+            <ul>
+                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fab fa-snapchat-ghost"></i></a></li>
+                <li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                <li><a href="#"><i class="fab fa-tiktok"></i></a></li>
+            </ul>
+        </div>
+
+        <div class="text-contents">
+            <h1>DANIEL WELLINGTON WATCHES AND JEWELLERY</h1>
+            <p>Discover our selection of women's watches and men's watches to find the perfect watch for you.</p>
+            <p class="textAlign-center">With Daniel Wellington's watches, there is always for someone, containing the full range from <a href="#">women's watches</a> and <a href="#">men's watches</a> to small watches, <a href="#">automatic watches</a>, <a href="#">gold watches</a>, <a href="#">silver watches</a> or <a href="#">rose gold watches</a>. Regardless of taste and need, we have a watch for you, ranging from classic stylish watches in steel to leather strap watches or <a href="#">square watches</a>. All these watches are offered in several colors and different designs.</p>
+            <p>Few things are as attractive as a stylish watch in an exclusive design around the wrist. Today, the wristwatch is more than just something that tells time. The watch is an accessory, part of your look, style and outfit. The watch now is a stylish accessory that binds together and enhances the whole look, something that represents you. An elegant and timeless watch can be seen as an investment and should be present among everyone, both men and women. If you choose a classic watch, you can use it for a stylish look or office days. Or a more casual look with a silver watch or gold watch with different dial colors.</p>
+            <p>At Daniel Wellington you can buy watches online and in store. Choose from a large assortment of stylish watches to decorate your wrist with. We also have <a href="#">watch straps</a> in various materials such as <a href="#">leather</a>, steel, <a href="#">mesh</a> and <a href="#">NATO fabric</a>. Our watch range consists of several different types of wristwatches, <a href="#">ceramic watches</a>, automatic watches and <a href="#">active watches</a>. Among Daniel Wellington's watches, you will also find watches in several different sizes for both women and men, watches with different and <a href="#">unique dials</a>. No matter what style you like, we have watches online and in store for you!</p>
+            <p>Stylish women's watches and men's watches are both practical, tasteful and something that can make a look complete. In the past, exclusive watches have been more connected to status, it is becoming clearer that the watch is also an accessory for a bigger picture, all of you. Daniel Wellington offers many different <a href="#">accessories</a> that complement each other. Jewelry such as <a href="#">bracelets</a> and <a href="#">rings</a> in silver or gold fit perfectly with our watches, practical and timeless watches to keep for a long time. With their timelessness, watches for women and men have never felt more right and trendy than they do today. In everyday life, stylish watches in classic designs feels right.</p>
+            <p>Watch straps in leather, mesh or silver-colored and gold-colored steel always works. White watches, black watches, a watch completely in white or completely in black make your look stylish and tough. Or more discreet and decorated watches that are exemplary for parties, more important occasions or when you really want to make a statement with your outfit. Regardless of your personal style, a trendy women's watch or men's watch always gives a stylish and appealing impression, which is further enhanced by matching your watch with other accessories such as jewelry. At Daniel Wellington we have carefully selected our watches, with unique designs, both style and function. Search on our website or in a store near you for your next favorite watch.</p>
+        </div>
+    </section>
+    <div onclick="topButton()" class="scrollTop-btn"><i class="fa-solid fa-arrow-up-long"></i></div>
+    <!-- Section Four END -->
+
+    <!-- Footer START -->
+    <footer>
+        <div class="footerOne">
+            <div class="footerSub-one">
+                <p onclick="shop()">SHOP <i id="footerShop-arrowId" class="fa-solid fa-angle-down footerOne-dropdown"></i></p>
+                <ul id="footerShow" class="footerOneLists">
+                    <li><a href="#">Shop Instagram</a></li>
+                    <li><a href="#">Watches</a></li>
+                    <li><a href="#">Jewelry</a></li>
+                    <li><a href="#">Watch Straps</a></li>
+                    <li><a href="#">Stores</a></li>
+                    <li><a href="#">Inspiration</a></li>
+                </ul>
+            </div>
+            <div class="footerSub-two">
+                <p onclick="customer_service()">CUSTOMER SERVICE <i id="footerCustomerService-arrowId" class="fa-solid fa-angle-down footerOne-dropdown"></i></p>
+                <ul id="footerCustomerService" class="footerOneLists">
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">How to change your strap</a></li>
+                    <li><a href="#">How to adjust your mesh strap</a></li>
+                    <li><a href="#">How to measure your ring size</a></li>
+                    <li><a href="#">How to assemble the smartwatch case</a></li>
+                </ul>
+            </div>
+            <div class="footerSub-three">
+                <p onclick="information()">INFORMATION <i id="footerInformation-arrowId" class="fa-solid fa-angle-down footerOne-dropdown"></i></p>
+                <ul id="footerInformation" class="footerOneLists">
+                    <li><a href="#">Terms</a></li>
+                    <li><a href="#">Return Policy</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Warranties</a></li>
+                    <li><a href="#">Owners Guide</a></li>
+                    <li><a href="#">Accessibility</a></li>
+                    <li><a href="#">Cookies Settings</a></li>
+                </ul>
+            </div>
+            <div class="footerSub-four">
+                <p onclick="about_us()">ABOUT US <i id="footerAboutUs-arrowId" class="fa-solid fa-angle-down footerOne-dropdown"></i></p>
+                <ul id="footerAboutUs" class="footerOneLists">
+                    <li><a href="#">Our Story</a></li>
+                    <li><a href="#">Career</a></li>
+                    <li><a href="#">Accessibility</a></li>
+                    <li><a href="#">Sustainability</a></li>
+                </ul>
+            </div>
+            <div class="footerSub-five">
+                <select>
+                    <option value="0">Australia</option>
+                    <option value="1">India</option>
+                    <option value="2">Malaysia</option>
+                    <option value="3">USA</option>
+                    <option value="4">Vietnam</option>
+                </select>
+            </div>
+        </div>
+        <div class="footerTwo">
+            <div class="footerTwoSub-one">
+                <img src="img/payment_options.JPG" alt="payment options">
+            </div>
+            <div class="footerTwoSub-two"> 
+                <a class="textDecoNone" href="#">DANIEL WELLINGTON</a>
+            </div>
+            <div class="footerTwoSub-three">
+                <p>&#169; 2022 Daniel Wellington AB</p>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer END -->
+        
+    <script src="js/script.js"></script>
+</body>
+</html>
